@@ -12,3 +12,13 @@ Vue.use(VueAxios, axios);
 const router = new VueRouter({ mode: 'history' });
 new Vue(Vue.util.extend({ router })).$mount('#app');
 new Vue(Vue.util.extend({ router }, App)).$mount('#app');
+
+const routes = [
+  {
+        name: 'CreateItem',
+        path: '/',
+        component: CreateItem
+    }
+];
+
+const router = new VueRouter({ mode: 'history', routes: routes});
