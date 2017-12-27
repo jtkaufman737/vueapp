@@ -1,6 +1,6 @@
 
 import Vue from 'vue';
-
+import App from './App.vue';
 import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
@@ -10,3 +10,4 @@ Vue.use(VueAxios, axios);
 
 const router = new VueRouter({ mode: 'history' });
 new Vue(Vue.util.extend({ router })).$mount('#app');
+new Vue(Vue.util.extend({ router }, App)).$mount('#app');
