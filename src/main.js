@@ -2,6 +2,7 @@
 import Vue from 'vue';
 import App from './App.vue';
 import VueRouter from 'vue-router';
+import CreateItem from './components/CreateItem.vue';
 Vue.use(VueRouter);
 
 import VueAxios from 'vue-axios';
